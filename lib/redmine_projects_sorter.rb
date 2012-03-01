@@ -43,8 +43,8 @@ module Redmine
           private
           def flatten(ts, d = 0)
             return [] if ts.size == 0
-            t = ts.shift
-            [[t[0], d]] + flatten(t[1], d+1) + flatten(ts, d)
+            n, cs = ts.shift
+            [[n, d]] + flatten(cs, d+1) + flatten(ts, d)
           end
         end
       end
