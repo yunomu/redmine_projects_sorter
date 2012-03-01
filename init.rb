@@ -23,6 +23,6 @@ Redmine::Plugin.register :redmine_projects_sorter do
   author 'Yusuke Nomura'
   description 'This is a plugin for sorting projects of Redmine'
   version '0.0.2'
-  url 'http://yunomu.hatenablog.jp/'
+  url 'https://github.com/yunomu/redmine_projects_sorter'
   author_url 'https://github.com/yunomu'
 end
