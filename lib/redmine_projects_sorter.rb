@@ -14,7 +14,7 @@ module Redmine
 
           def render_project_hierarchy_with_sort(projects)
             #render_project_hierarchy_without_sort(projects)
-            out(sortTree(construct(projects), :name)).html_safe
+            out(sortTree(construct(projects), :ord)).html_safe
           end
 
           private
@@ -64,9 +64,9 @@ module Redmine
         ret + construct(bs)
       end
 
-      def sortTree(ts, key = :name)
+      def sortTree(ts, key)
         (ts.map {|t|
-          [t[0], sortTree(t[1])]
+          [t[0], sortTree(t[1], key)]
         }).sort {|a, b|
           a[0].send(key) <=> b[0].send(key)
         }

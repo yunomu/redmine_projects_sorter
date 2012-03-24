@@ -1,3 +1,5 @@
 = projects_sorter
 
-Description goes here
+This plugin adds order to projects. 
+
+ # rake db:migrate_plugins
