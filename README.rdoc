@@ -3,3 +3,7 @@
 This plugin adds order to projects. 
 
  # rake db:migrate_plugins
+
+== Link
+
+* http://yunomu.hatenablog.jp/entry/2012/03/08/053217 (Japanese)
